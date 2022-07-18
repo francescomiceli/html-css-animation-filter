@@ -15,11 +15,11 @@
     width: 100px;
     height: 100px;
     background: red;
+    transition: width 3s;
 }
 
 .ex-2-square:active{
     width: 100%;
-    transition: 5s;
 }
 /* ! end Secondo */
 
@@ -27,7 +27,7 @@
     width: 100px;
     height: 100px;
     background: red;
-    transition: 1s linear;
+    transition: 1s ease;
 }
 
 .ex-3-square:hover{
@@ -39,7 +39,7 @@
     width: 100px;
     height: 100px;
     background: red;
-    transition: opacity 1s linear;
+    transition: opacity 1s;
 }
 
 .ex-4-square:hover{
@@ -60,10 +60,16 @@
 .ex-5-square:hover{
     transform: scale(1.5);
 }
+
+.ex-5-square:active{
+    transform: scale(1);
+}
+
 /* ! end quinto */
 
 .ex-6-img, .ex-7-img, .ex-8-img {
     width: 500px;
+    
 }
 
 .ex-6-img:hover{
@@ -78,34 +84,35 @@
 .ex-7-img:hover{
     filter: sepia(1);
     transition: 3s;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .ex-8-img{
-    transition: 2s ;
+    transition: 2s;
 }
 
 .ex-8-img:hover{
-    filter: sepia(6);
-    filter: contrast(5);
+    filter: sepia(3) contrast(3);
     border-radius: 40px;
+    
 }
 
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
-    transition-duration: 3s;
+    transition-duration: 2s;
 }
 
 .ex-9-img:hover{
     filter: grayscale(.6) sepia(.5);
     border-radius: 20px;
     transform: scale(1.5);
+    
 }
 
 .ex-10-icon {
     font-size: 60px;
-    animation: rotation 1s linear infinite;
+    animation: rotation 2s linear infinite;
 }
 
 @keyframes rotation {
@@ -113,17 +120,17 @@
         transform: rotate(0deg);
     }
     to{
-        transform: rotate(360deg);
+        transform: rotate(-360deg);
     }
 }
 .ex-11-icon {
     font-size: 60px;
-    
+    transition: 1s linear;
 }
 
 .ex-11-icon:hover{
     transform: rotate(360deg);
-    transition: 2s linear;
+    
 }
 
 .ex-12-button, .ex-13-button {
